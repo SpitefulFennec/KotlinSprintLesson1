@@ -1,20 +1,16 @@
 package org.example.lesson1
 
-fun main() {
-    //Инициируем сколько было суммарно секунд
-    var seconds = 6480
-    //Переводим секунды в минуты, затем в часы, сохраняя остаток минут
-    val minutes = seconds / 60 % 60
-    //Переводим секунды в минуты, затем в часы
-    val hours = seconds / 60 / 60
-    //Вычисляем остаток секунд от минут, здесь получился 0
-    seconds = seconds % 60
-    //Выводим значения в консоль. Поскольку значения заранее известны, закостылил дополнительные нолики.
-    println("0$hours:$minutes:0$seconds")
+const val SECONDS_IN_MINUTE = 60
+const val MINUTES_IN_HOUR = 60
 
-    /*Нолики можно было бы добавить через if-else, проверяя через деление на 10
-    (ну или через преобразование в string и проверку количества символов),
-    но полагаю, что есть какая-нибудь библиотека, которая может переводить
-    секунды в минуты и часы по уже готовым шаблонам.
-    */
+fun main() {
+
+    val totalSeconds = 6480
+    val minutes = totalSeconds / SECONDS_IN_MINUTE % MINUTES_IN_HOUR
+    val hours = totalSeconds / SECONDS_IN_MINUTE / MINUTES_IN_HOUR
+    val seconds = totalSeconds % SECONDS_IN_MINUTE
+
+    val result = String.format("%02d:%02d:%02d", hours, minutes, seconds)
+    println(result)
+
 }
