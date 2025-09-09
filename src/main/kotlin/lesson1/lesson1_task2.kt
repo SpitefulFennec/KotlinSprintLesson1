@@ -5,8 +5,8 @@ fun main() {
     println("sum of orders = $sumOfOrders")
     var thankingOrderRespond: String = "Спасибо за покупку! Ждём вас снова!"
     println("thanking respond = $thankingOrderRespond")
-//    var sumOfEmployees: Int = 2000
+    var sumOfEmployees: Int = 2000
 //    println("sum of employees = $sumOfEmployees")
-    var sumOfEmployees: Int = 1999
+    sumOfEmployees: Int = 1999
     println("sum of employees = $sumOfEmployees")
 }
