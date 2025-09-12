@@ -7,6 +7,6 @@ fun main() {
     println("thanking respond = $thankingOrderRespond")
     var sumOfEmployees: Int = 2000
 //    println("sum of employees = $sumOfEmployees")
-    sumOfEmployees: Int = 1999
+    sumOfEmployees = 1999
     println("sum of employees = $sumOfEmployees")
 }
