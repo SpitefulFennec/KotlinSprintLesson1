@@ -9,7 +9,7 @@ fun main() {
 //Сразу вычисляем сумму всех работников
     val sumOfEmployees = sumOfFullTimeEmployees + sumOfInterns
 
-//Записываем известные значения зарплат (могли бы быть и побольше :с )
+//Записываем известные значения зарплат (могли бы быть и побольше)
     val fullEmployeeSalary = 30000
     val internSalary = 20000
 
